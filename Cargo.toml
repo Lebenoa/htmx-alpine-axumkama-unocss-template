@@ -1,0 +1,12 @@
+[package]
+name = "axum-htmx-alpine-unocss-template"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+askama = "0.15.6"
+axum = "0.8.9"
+htmx-framework = { path = 'S:\Data\CODE\Rust\Framework\htmx-framework' }
+strfmt = "0.2.5"
+tokio = { version = "1.52.1", features = ["fs", "macros", "rt-multi-thread"] }
+tower-http = { version = "0.6.8", features = ["fs"] }

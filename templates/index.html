@@ -1,0 +1,14 @@
+<div class="dashboard">
+    <h1>Welcome, {{ username }}!</h1>
+
+    <div hx-get="/api/stats" hx-trigger="load, every 30s" hx-swap="outerHTML">
+        Loading stats...
+    </div>
+
+    <div x-data="{ open: false }">
+        <button @click="open = !open">Toggle Details</button>
+        <div x-show="open" class="details">
+            <p>Stats count: {{ stats_count }}</p>
+        </div>
+    </div>
+</div>
